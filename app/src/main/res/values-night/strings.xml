@@ -1,6 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SIGNALS FROM MARS</string>
-    <string name="key_name">name</string>
     <string name="signals_from_mars_application">signals from mars application</string>
     <string name="start_your_adventure">START YOUR ADVENTURE</string>
     <string name="your_name_here">your name here</string>
