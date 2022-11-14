@@ -60,6 +60,13 @@ public class StoryAcitivity extends AppCompatActivity {
         if(page.isFinalPage()){
             choice1_button.setVisibility(View.INVISIBLE);
             choice2_button.setText(R.string.play_again);
+
+            choice2_button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    finish();
+                }
+            });
         }
         else{
             createButtons(name, page);
