@@ -1,10 +1,12 @@
-package com.example.signalsfrommars;
+package com.example.signalsfrommars.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+
+import com.example.signalsfrommars.R;
 
 public class StoryAcitivity extends AppCompatActivity {
 
