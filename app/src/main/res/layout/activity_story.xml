@@ -6,4 +6,63 @@
     android:layout_height="match_parent"
     tools:context=".ui.StoryAcitivity">
 
+    <Button
+        android:id="@+id/choice2_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/page0_choice2"
+        android:textColor="@color/teal_200"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/choice1_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="@string/page0_choice1"
+        android:textColor="@color/teal_200"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/choice2_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/choice1_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:contentDescription="@string/page_content_story"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                tools:src="@drawable/page0" />
+
+            <TextView
+                android:id="@+id/StoryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:lineSpacingExtra="8sp"
+                android:textSize="16sp"
+                tools:text="@string/page0" />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
