@@ -10,13 +10,13 @@
         android:id="@+id/choice2_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
         android:text="@string/page0_choice2"
-        android:textColor="@color/teal_200"
+        android:textColor="#00838F"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:backgroundTint="@color/white"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/choice1_button"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
         android:text="@string/page0_choice1"
-        android:textColor="@color/teal_200"
+        android:textColor="#00838F"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/choice2_button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,11 +46,12 @@
 
             <ImageView
 
-                android:id="@+id/imageView"
+                android:id="@+id/StoryImageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                tools:src="@drawable/page0" />
+                tools:src="@drawable/page0"
+                android:contentDescription="@string/image_view_story" />
 
             <TextView
                 android:id="@+id/StoryTextView"

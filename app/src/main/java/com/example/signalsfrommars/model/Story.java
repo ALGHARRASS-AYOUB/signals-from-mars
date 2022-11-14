@@ -67,6 +67,7 @@ public class Story {
 
 
     public Page getPage(int numPage) {
+
         try{
             return  this.pages[numPage];
         }catch (ArrayIndexOutOfBoundsException e){
