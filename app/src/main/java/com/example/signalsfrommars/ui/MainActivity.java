@@ -12,14 +12,14 @@ import android.widget.EditText;
 import com.example.signalsfrommars.R;
 
 public class MainActivity extends AppCompatActivity {
+        EditText name_edit_text;
+        Button start_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText name_edit_text;
-        Button start_button;
 
         name_edit_text=findViewById(R.id.NameEditText);
         start_button=findViewById(R.id.startButton  );
@@ -32,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        name_edit_text.setText("");
     }
 
     private void startStory(String name) {

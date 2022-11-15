@@ -1,5 +1,7 @@
 package com.example.signalsfrommars.model;
 
+import java.util.Stack;
+
 public class Page {
     private  int imageId;
     private  int textId;

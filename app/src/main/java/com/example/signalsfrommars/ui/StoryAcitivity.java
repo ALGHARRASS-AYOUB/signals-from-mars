@@ -11,10 +11,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.signalsfrommars.R;
 import com.example.signalsfrommars.model.Page;
 import com.example.signalsfrommars.model.Story;
+
+import java.util.Stack;
 
 public class StoryAcitivity extends AppCompatActivity {
 
@@ -24,6 +27,8 @@ public class StoryAcitivity extends AppCompatActivity {
     private Button choice1_button;
     private Button choice2_button;
     private String name;
+    private Stack<Integer> stack =new Stack<Integer>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +54,7 @@ public class StoryAcitivity extends AppCompatActivity {
     }
 
     private void loadPage(int numPage,String name) {
+        stack.push(numPage);
         Page page=this.story.getPage(numPage);
         Drawable image= ContextCompat.getDrawable(getApplicationContext(),page.getImageId());
 
@@ -91,5 +97,18 @@ public class StoryAcitivity extends AppCompatActivity {
                 loadPage(nextPage, name);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        stack.pop();
+        if(stack.isEmpty()){
+            super.onBackPressed();
+        }
+        else{
+            loadPage(stack.pop(),name);
+            Toast.makeText(this, "poped", Toast.LENGTH_SHORT).show();
+        }
+
     }
 }
