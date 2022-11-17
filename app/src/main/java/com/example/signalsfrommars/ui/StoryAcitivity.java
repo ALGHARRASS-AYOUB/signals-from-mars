@@ -107,7 +107,7 @@ public class StoryAcitivity extends AppCompatActivity {
         }
         else{
             loadPage(stack.pop(),name);
-            Toast.makeText(this, "poped", Toast.LENGTH_SHORT).show();
+
         }
 
     }
