@@ -18,7 +18,7 @@
     <string name="page1_choice1">Stope and inverstigate</string>
     <string name="page1_choice2">Continue Home to earth </string>
 
-    <string name="page2">Hello, %1$s,
+    <string name="page2">Hello, %1$,
         With this utility you generate a 16 character output based on your input of numbers and upper and lower case letters.  Random strings can be unique. Used in computing, a random string generator can also be called a random character string generator. This is an important tool if you want to generate a unique set of strings. The utility generates a sequence that lacks a pattern and is random.</string>
     <string name="page2_choice1">Stope and inverstigate</string>
     <string name="page2_choice2">Continue Home to earth </string>
